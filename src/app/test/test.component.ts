@@ -9,4 +9,10 @@ export class TestComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  onOtpChange(input: any) {
+    if (input.length == 4) {
+      console.log('text entered', input);
+    }
+  }
 }
